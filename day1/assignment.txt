@@ -1,0 +1,13 @@
+<script>
+           let root = document.getElementById("root");
+           console.log(root);
+           let heading = document.createElement("h1");
+           heading.innerHTML="heading 1 from js";
+           root.appendChild(heading);
+           console.log(root); 
+           
+</script>
+
+doubt :
+in above code why both console output are same ?
+
