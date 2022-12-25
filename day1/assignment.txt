@@ -11,3 +11,30 @@
 doubt :
 in above code why both console output are same ?
 
+Q1:What is Emmet?
+Ans : Emmet is a Extension for Vs-code , by using developer can code in a fastest way to save time and extra effort
+. they ave to type code like css selector and automatically code will added to files.
+
+Q2 Difference between a Library and Framework?
+both library and frameworks are the code written by someone to help other to use resuable code in frequent.
+framework is a set off library, library is collection of some code. library is subset of framework.
+code direct library ko call krta h , but framwork kissi code ko call krta h.
+When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. 
+When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, 
+but it calls the code you plugged in as needed.
+
+Q3 What is CDN? Why do we use it?
+A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content 
+close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored 
+on the origin server and is then replicated and stored elsewhere as needed. By caching content physically close to where a 
+user is and reducing the distance it has to travel, latency is reduced. This process also decreases stress on origin servers
+ by distributing the load geographically across multiple servers.
+
+Q4 Why is React known as React?
+
+Q What is crossorigin in script tag?
+Q What is diference between React and ReactDOM
+Q What is difference between react.development.js and react.production.js files via CDN?
+Q What is async and defer? watch
+
+
