@@ -17,7 +17,7 @@ Ans : Emmet is a Extension for Vs-code , by using developer can code in a fastes
 
 Q2 Difference between a Library and Framework?
 both library and frameworks are the code written by someone to help other to use resuable code in frequent.
-framework is a set off library, library is collection of some code. library is subset of framework.
+framework is a set off library(helpers, configurations, design pattern, etc), library is collection of some code. library is subset of framework.
 code direct library ko call krta h , but framwork kissi code ko call krta h.
 When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. 
 When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, 
@@ -29,12 +29,47 @@ close to where each end user is accessing the internet via a web-enabled device.
 on the origin server and is then replicated and stored elsewhere as needed. By caching content physically close to where a 
 user is and reducing the distance it has to travel, latency is reduced. This process also decreases stress on origin servers
  by distributing the load geographically across multiple servers.
+ https://www.youtube.com/watch?v=NNqVbVO566Q&ab_channel=MRVYAS
+
 
 Q4 Why is React known as React?
-
+React was developed for applications (Facebook) that have constantly changing data. Since React is a front-end library
+ or the “View” in MVC, this means that as the user clicks around and changes the app’s data, the view should “react” or 
+ change with those user events. User events being mouse clicks, typing, submitting a form.
+ 
 Q What is crossorigin in script tag?
+Cross-Origin Resource Sharing (CORS) refers to the method that allows you to make requests to the server deployed at 
+a different domain
+
+
 Q What is diference between React and ReactDOM
+React provide core of React library but ReactDOM is used to manipulate dom level activity.
+
 Q What is difference between react.development.js and react.production.js files via CDN?
-Q What is async and defer? watch
+both are having same functionality , but react.production.js are minifird file of react.development code.
+
+Q What is async and defer?
+ async and defer are the keyword which are used inside script tag along with src.
+ these are used to load external script efficiently to our web pages.
+
+when we load web pages 2 things appen:
+1. html parsing 
+2 loading of script 
+   loading of script happen in 2 ways :
+   2.1 fetcing script from network
+   2.2 execution of script 
+example :
+<script src ="abc.js"></script>
+it start with html parsing, once script appers it stop html parsing, and start fetcing script from network,
+once network fetcing is completed , it start executing of script(still Html parsing is in pause state), once script
+execution is completed then only it start remaining  html parsing.
+
+<script async src ="abc.js"><script>
+Html parsing + fetcing of script from network parallely, once fetching is completed then it pause html parsing , and
+start executing script. once execution of script is completed then it will start remaining html parsing.
+
+<script defer src ="abc.js"></script>
+in this case Html parsing +fetcing happen parallely, it continou parsing html , script will execute once parsing is completed.
+ 
 
 
