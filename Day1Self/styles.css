@@ -1,0 +1,19 @@
+#hDiv,#bottom-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#ulEle{
+    box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 20%);
+    box-shadow: inset 0 0 10px #f8a100;
+    margin:40px;
+    padding: 20px 40px;
+}
+
+#ulEle li{
+    padding:10px 5px;
+    font-size: 20px;
+}
+
