@@ -1,0 +1,57 @@
+1. What is JSX?
+Ans . JSX is Html like syntex. just like 
+const heading = <h1>this is Heading</h1>
+it's produce React Element. we can say above example is example of react Element. it place elements 
+inside Dom without React.createElement.
+purpose to make it Easier to Create React Component.
+
+
+2. Superpowers of React?
+ 1. can Embade Expression in JSX.
+ Ex . 
+     let marks = 64;
+     let std = 10;
+     const a = <h1>i have {marks} % marks in {std}th class</h1>
+    we can write any valid js inside curley brackets.
+
+ 2. we can use quotes or curley bracket to specify attributes
+ ex .
+    const lk = <a href="https://xyz/pqr.com">click here</a>
+
+    let url = "https://www.google.com";
+
+    const im = <img src = {url} />
+
+3. It can contain children , for that we have to use it inside ()
+   const element = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
+
+4. It prevent injection attack.
+ex if we are calling any api in our code , may be hacker modify our data , they may injected 
+something, so jsx always gives us gurantee that can not render in dom which we didn't code explictly.
+it first convert it to string , this helps us to prevent XXl (cross site scripting-attack)
+
+5. EOD JSx Represent Objetct 
+Ex : <h1 className = "title" id="first">this is title</h1>
+
+This is same as 
+React.createElement("h1",{
+   className:"title",
+   id:"first"
+},"this is title)
+
+it's done by the Babel
+
+Q3. use of type in script ?
+The type attribute specifies the Internet media type (formerly known as MIME type) 
+of the linked document.
+
+Q.4 {TitleComponet} vs {<TitleComponet/>} vs {<TitleComponet><TitleComponet/>}
+
+
+first one is simple any js expression . 
+2 and 3rd are the way of calling components

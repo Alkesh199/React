@@ -1,0 +1,101 @@
+● - What is `NPM`?
+A react app is powered by lots of many things, it's not only linited to React.
+so to manages our all the package we need a package manager. that's why we use npm. 
+in npm official website there is nothing mention like node package manager.
+
+npm is a package manager.
+
+
+● - What is `Parcel/Webpack`? Why do we need it?
+parcel/Webpack are the open source bundlers. supported by popular languages like typescript , sass etc.
+before pushing our code to dev environment we need some optimization to make our app performant. 
+there are some task which are performed by the parcel:
+1. HMR (hot module reloading)
+2. File Watcher Algorithms written in c++
+3. Bundling
+4. MINIFY
+5. cleaning our code (Removing console)
+7. super fast build algorithms
+8. image optimization
+9. Caching While Development
+10. Compression
+11. Compaitable with older versions of browsers.
+12. HTTPS on dev (npx parcel index.html --https)
+13. Managing Port numbers
+14. Consistant hashing algo. (to maintain intergity)
+15. zero configuration bundler 
+16. creats server for use
+
+so we can say parcel is a "BEAST"
+
+
+
+● - What is `.parcel-cache`
+parcel-cache  stores information about your project when parcel builds it, so that when it rebuilds,
+ it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel 
+ can be so fast in development mode. 
+
+
+● - What is `npx` ?
+The command npm is used to download JavaScript packages from Node Package Manager, and npx is used to 
+execute JavaScript  packages downloaded this way.npx helps us avoid versioning, dependency issues and 
+installing unnecessary packages that we just want to try out.
+
+https://www.geeksforgeeks.org/what-are-the-differences-between-npm-and-npx/
+
+
+● - What is difference between `dependencies` vs `devDependencies`
+
+
+
+● - What is Tree Shaking?
+
+
+
+
+● - What is Hot Module Replacement?
+
+
+
+
+● - List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+
+
+
+● - What is `.gitignore`? What should we add and not add into it?
+
+
+
+
+
+● - What is the difference between `package.json` and `package-lock.json`
+
+
+
+
+● - Why should I not modify `package-lock.json`?
+
+
+
+● - What is `node_modules` ? Is it a good idea to push that on git?
+
+
+
+
+● - What is the `dist` folder?
+
+
+
+● - What is `browserlists`
+
+
+
+Read about dif bundlers: vite, webpack, parcel
+
+
+
+● Read about: ^ - caret and ~ - tilda
+
+
+● Read about Script types in html (MDN Docs)

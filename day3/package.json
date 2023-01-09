@@ -1,0 +1,42 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "this is for laying the foundation day3 class work",
+  
+  "scripts": {
+    "test": "jtest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alkesh199/React.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "foundation",
+    "work",
+    "practice"
+  ],
+  "author": "alkesh kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alkesh199/React/issues"
+  },
+  "homepage": "https://github.com/Alkesh199/React#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "browserlist": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
+}
