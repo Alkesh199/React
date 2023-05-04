@@ -1,0 +1,38 @@
+{
+  "name": "day13",
+  "version": "1.0.0",
+  "description": "day 13 , here will work on test cases using jest",
+  "scripts": {
+    "test": "jest",
+    "build": "build parcel index.html",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alkesh199/React.git"
+  },
+  "keywords": [
+    "jest",
+    "react",
+    "test"
+  ],
+  "author": "alkesh kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alkesh199/React/issues"
+  },
+  "homepage": "https://github.com/Alkesh199/React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.1"
+  }
+}
