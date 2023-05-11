@@ -1,10 +1,15 @@
+
+import ShimmerUI from "./ShimmerUI";
+import useRestaurent from "../utils/useRestaurent";
+import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cloudnary_img_url } from "../../config";
 import  {addItems,removeItem}  from "../utils/cartSlice";
-import { useDispatch } from "react-redux";
 
-const RestaurentMenuCard = ({resMenu}) =>{
-
+const RestaurentMenu = ()=>{
+    const param = useParams();
+    const {id} = param;
+   const resMenu = useRestaurent(id);
    const dispatch= useDispatch();
 
     const addFoodItem = (item) => {
@@ -13,11 +18,11 @@ const RestaurentMenuCard = ({resMenu}) =>{
        
     }
 
-
-
-   
-    return (
-        
+    return (!resMenu)?<ShimmerUI></ShimmerUI>:(
+        // <>
+        // {/* <RestaurentMenuCard  resMenu={resMenu}></RestaurentMenuCard> */}
+       
+        // </>
         <>
 
         <div className="flex justify-between max-w-[900px] border-b border-dotted border-gray-400 lg:m-auto pb-10 mx-[15px]">
@@ -37,12 +42,12 @@ const RestaurentMenuCard = ({resMenu}) =>{
             </div>
         </div>
         <div className="menu mx-[15px]">
-            <div className="rest-main-details">
+            <div  data-testid="menu" className="rest-main-details">
         
             {resMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map((itemOuter)=>{
                 return(
                     
-                        <div key={Math.random()}>
+                        <div  key={Math.random()} >
                             {
                             itemOuter?.card?.card?.itemCards?.map((innerItem)=>{
                                 let item = innerItem?.card?.info;
@@ -56,7 +61,7 @@ const RestaurentMenuCard = ({resMenu}) =>{
                                     </div>
                                     <div className="w-[30%] flex flex-col items-center">
                                        {innerItem?.card?.info?.imageId &&  <img src = {cloudnary_img_url+item?.imageId } className='w-[118px] h-[96px] object-cover rounded-md m-auto' ></img>}
-                                       <button className="text-lime-700 font-semibold border rounded py-1 px-4 mt-[-20px] bg-white" onClick={() => addFoodItem(item)}>ADD</button>
+                                       <button data-testid="" className="text-lime-700 font-semibold border rounded py-1 px-4 mt-[-20px] bg-white menu-btn" onClick={() => addFoodItem(item)}>ADD</button>
                                     </div>
                                     </div>
                                 );
@@ -69,8 +74,7 @@ const RestaurentMenuCard = ({resMenu}) =>{
           
         </div>
         </>
-    
-    );
+    )
 }
 
-export default RestaurentMenuCard;
+export default RestaurentMenu;

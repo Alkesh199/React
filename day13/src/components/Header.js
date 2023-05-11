@@ -16,11 +16,11 @@ const Header = () =>{
     const [showItems,setShowItems] = useState(false);
 
     const {user} = useContext(UserContext);
-    console.log(user);
+    // console.log(user);
     const cartS = useSelector((store)=>store.cart);
 
     function logInHandler(){
-        console.log(isLoggedIn);
+        // console.log(isLoggedIn);
          setLogInLogOut(!isLoggedIn);
     }
 
@@ -36,12 +36,12 @@ const Header = () =>{
         
            
 
-           {isOnline && <div className="w-6 h-6 bg-lime-600 rounded-[50%]"></div>}
+           {isOnline && <div data-testid="onlineheaderbig" className="w-6 h-6 bg-lime-600 rounded-[50%]"></div>}
            {!isOnline && <div className="w-6 h-6 bg-red-600 rounded-[50%]"></div>}
                  
            
            <div>
-           {!isLoggedIn && <button onClick={logInHandler} className="text-black bg-white text-2xl p-1 border-4 rounded-md border-black w-24 ">login</button>}
+           {!isLoggedIn && <button onClick={logInHandler} data-testid= "loginBtn" className="text-black bg-white text-2xl p-1 border-4 rounded-md border-black w-24 ">login</button>}
             {isLoggedIn && <div className="flex flex-col items-center"><button onClick={logInHandler} className="text-black bg-white text-2xl p-1 border-4 rounded-md  border-black w-24">logout</button><p className="text-white">{user.name}</p></div>}
             </div>
         </div>
@@ -52,7 +52,7 @@ const Header = () =>{
             <div className = "flex justify-between items-center px-5" >
                     <Title />
                     <Link to="cart"><li className="text-lg  text-white hover:text-orange-700 list-none">cart <span className="px-2 py-1 !text-red font-bold border border-red-700 rounded ">{cartS.count}</span></li></Link>
-                    {isOnline && <div className="w-6 h-6 bg-lime-600 rounded-[50%]"></div>}
+                    {isOnline && <div data-testid="onlineheadersmall" className="w-6 h-6 bg-lime-600 rounded-[50%]"></div>}
                     {!isOnline && <div className="w-6 h-6 bg-red-600 rounded-[50%]"></div>}
                     <div className ="">
                     {!isLoggedIn && <button onClick={logInHandler} className="text-black bg-white text-lg font-normal my-1 border-4 rounded-md border-black w-24 ">login</button>}
